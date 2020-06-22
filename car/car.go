@@ -1,7 +1,5 @@
 package car
 
-import "log"
-
-func run() {
-	log.Println("vroom!!")
+func run() string {
+	return "vroom!!"
 }
