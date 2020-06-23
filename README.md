@@ -1,8 +1,11 @@
 # goimport
 The test for import on golang.
 
-## env
+## Environment
 ```shell-session
+$ go version
+go version go1.14.2 darwin/amd64
+
 $ echo $GO111MODULE
 on
 ```
