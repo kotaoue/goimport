@@ -37,4 +37,5 @@ cf. https://github.com/golang/go/wiki/Modules#quick-start-example
 ```shell-session
 $ go mod init github.com/kotaoue/goimport
 $ go build -o main
+# When build complete comments "//indirect" are atached on "go.mod".
 ```
