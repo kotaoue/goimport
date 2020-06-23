@@ -35,7 +35,22 @@ $ tree $GOPATH -L 5
 ### Command logs
 cf. https://github.com/golang/go/wiki/Modules#quick-start-example
 ```shell-session
+$ cd $GOPATH/src/github.com/kotaoue/goimport/packages
+$ go mod init
+
+$ cd $GOPATH/src/github.com/kotaoue/goimport/packages/car
+$ go mod init
+
 $ go mod init github.com/kotaoue/goimport
-$ go build -o main
-# When build complete comments "//indirect" are atached on "go.mod".
+$ echo "replace github.com/kotaoue/goimport/packages/car => ./packages/car" >> go.mod
+
+# When build completed a require for "packages" are attached on "go.mod".
+$ go build main.go
+
+$ go list -m all
+github.com/kotaoue/goimport
+github.com/kotaoue/goimport/packages/car v0.0.0-00010101000000-000000000000 => ./packages/car
+golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c
+rsc.io/quote v1.5.2
+rsc.io/sampler v1.3.0
 ```
