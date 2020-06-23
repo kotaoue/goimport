@@ -13,6 +13,7 @@ on
 ## Tree
 ```shell-session
 $ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
+/$GOPATH/src/github.com/kotaoue/goimport
 ├── LICENSE
 ├── README.md
 ├── go.mod
