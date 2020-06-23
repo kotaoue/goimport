@@ -38,7 +38,7 @@ $ cd $GOPATH/src/github.com/kotaoue/goimport/
 $ go mod init github.com/kotaoue/goimport
 $ go mod edit -replace github.com/kotaoue/goimport/packages/car=./packages/car
 
-# When build completed a require for "packages" are attached on "go.mod".
+# When build completed a require for "packages/car" are attached on "go.mod".
 $ go build main.go
 
 $ go list -m all
