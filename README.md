@@ -20,18 +20,17 @@ $ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
 ├── go.sum
 ├── main.go
 └── packages
-    ├── car
-    │   ├── car.go
-    │   └── go.mod
-    └── go.mod
+    └── car
+        ├── car.go
+        └── go.mod
 ```
 
-### Command logs
-cf. https://github.com/golang/go/wiki/Modules#quick-start-example
-```shell-session
-$ cd $GOPATH/src/github.com/kotaoue/goimport/packages
-$ go mod init
+## cf.
+* https://github.com/golang/go/wiki/Modules#quick-start-example
+* https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive
 
+## Command logs
+```shell-session
 $ cd $GOPATH/src/github.com/kotaoue/goimport/packages/car
 $ go mod init
 
