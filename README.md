@@ -48,3 +48,15 @@ golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c
 rsc.io/quote v1.5.2
 rsc.io/sampler v1.3.0
 ```
+
+## Problrem
+```shell-session
+$ go vet main.go 
+# command-line-arguments
+vet: ./main.go:14:18: ignition not declared by package car
+
+$ go run main.go 
+# command-line-arguments
+./main.go:14:14: cannot refer to unexported name car.ignition
+./main.go:14:14: undefined: car.ignition
+```
