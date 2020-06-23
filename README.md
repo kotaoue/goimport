@@ -32,7 +32,9 @@ $ tree $GOPATH -L 5
             └── the-go-programming-language
 ```
 
-### go mod
+### Command logs
+cf. https://github.com/golang/go/wiki/Modules#quick-start-example
 ```shell-session
 $ go mod init github.com/kotaoue/goimport
+$ go build -o main
 ```
