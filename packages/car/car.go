@@ -1,5 +1,5 @@
 package car
 
-func run() string {
+func ignition() string {
 	return "vroom!!"
 }
