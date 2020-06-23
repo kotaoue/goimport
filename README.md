@@ -11,25 +11,18 @@ on
 ```
 
 ## Tree
-```
-$ tree $GOPATH -L 5
-/Users/kota.oue/go
-├── bin
-├── pkg
-│   └── mod
-│       ├── github.com
-│       └── golang.org
-└── src
-    └── github.com
-        └── kotaoue
-            ├── goimport
-            │   ├── LICENSE
-            │   ├── README.md
-            │   ├── main.go
-            │   └── packages
-            │       └── car.go
-            ├── gotour
-            └── the-go-programming-language
+```shell-session
+$ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
+├── LICENSE
+├── README.md
+├── go.mod
+├── go.sum
+├── main.go
+└── packages
+    ├── car
+    │   ├── car.go
+    │   └── go.mod
+    └── go.mod
 ```
 
 ### Command logs
