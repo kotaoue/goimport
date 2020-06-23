@@ -34,8 +34,9 @@ $ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
 $ cd $GOPATH/src/github.com/kotaoue/goimport/packages/car
 $ go mod init
 
+$ cd $GOPATH/src/github.com/kotaoue/goimport/
 $ go mod init github.com/kotaoue/goimport
-$ echo "replace github.com/kotaoue/goimport/packages/car => ./packages/car" >> go.mod
+$ go mod edit -replace github.com/kotaoue/goimport/packages/car=./packages/car
 
 # When build completed a require for "packages" are attached on "go.mod".
 $ go build main.go
