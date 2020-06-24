@@ -1,5 +1,5 @@
 package car
 
-func ignition() string {
+func Ignition() string {
 	return "vroom!!"
 }

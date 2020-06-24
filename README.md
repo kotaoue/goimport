@@ -49,14 +49,11 @@ rsc.io/quote v1.5.2
 rsc.io/sampler v1.3.0
 ```
 
-## Problrem
+## Result
 ```shell-session
-$ go vet main.go 
-# command-line-arguments
-vet: ./main.go:14:18: ignition not declared by package car
-
 $ go run main.go 
-# command-line-arguments
-./main.go:14:14: cannot refer to unexported name car.ignition
-./main.go:14:14: undefined: car.ignition
+2020/06/24 10:51:27 Start
+2020/06/24 10:51:27 こんにちは世界。
+2020/06/24 10:51:27 vroom!!
+2020/06/24 10:51:27 End
 ```
