@@ -2,7 +2,7 @@
 The test for import on golang.
 
 ## Environment
-```shell-session
+```ShellSession
 $ go version
 go version go1.14.2 darwin/amd64
 
@@ -11,7 +11,7 @@ on
 ```
 
 ## Tree
-```shell-session
+```ShellSession
 $ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
 /$GOPATH/src/github.com/kotaoue/goimport
 ├── LICENSE
@@ -30,7 +30,7 @@ $ tree $GOPATH/src/github.com/kotaoue/goimport -L 3
 * https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive
 
 ## Command logs
-```shell-session
+```ShellSession
 $ cd $GOPATH/src/github.com/kotaoue/goimport/packages/car
 $ go mod init
 
@@ -50,7 +50,7 @@ rsc.io/sampler v1.3.0
 ```
 
 ## Result
-```shell-session
+```ShellSession
 $ go run main.go 
 2020/06/24 10:51:27 Start
 2020/06/24 10:51:27 こんにちは世界。
